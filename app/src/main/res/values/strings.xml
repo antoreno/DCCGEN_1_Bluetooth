@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">SerialTerminal</string>
+    <string name="action_settings">Ayuda</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="errorUnknown">An unknown error occurred...</string>
+    <string name="errorNameExists">This name already exist...</string>
+    <string name="errorNameInvalid">This name is invalid...</string>
+    <string name="connect">Conectar</string>
+    <string name="device_not_found">Device not found, please check your connection...</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="disconnected">Desconectado</string>
+    <string name="bt_not_found">Bluetooth not supported</string>
+    <string name="bt_enable">Bluetooth Enable...</string>
+    <string name="status">Status</string>
+    <string name="clear">Clear</string>
+    <string name="receive">Receive</string>
+    <string name="enable_root_only">Enable (root only)</string>
+    <string name="enable">Enable</string>
+
+</resources>

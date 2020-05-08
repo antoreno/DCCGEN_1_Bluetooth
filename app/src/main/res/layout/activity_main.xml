@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!--  android:paddingLeft="@dimen/activity_vertical_margin"
+          android:paddingRight="@dimen/activity_horizontal_margin" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <CheckBox
+            android:id="@+id/checkBox_loco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loco:" />
+
+        <TextView
+            android:id="@+id/loco"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="right"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/cambiolocoBt"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text=" Ok "
+            android:textSize="15sp"
+            tools:width="100dp" />
+
+        <Button
+            android:id="@+id/sentidoBt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:text="--&gt;"
+            android:textColor="#da2f2f"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/stopBt"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="Stop"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/stopallBt"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="STOP"
+            android:textColor="#da2f2f"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <com.devmel.apps.serialterminal.StartPointSeekBar
+        android:id="@+id/velocidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:defaultBackgroundColor="@color/default_background_color"
+        custom:defaultBackgroundRangeColor="@color/default_background_range_color"
+        custom:maxValue="127"
+        custom:minValue="-127" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:id="@+id/tableRowf1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonfl"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="FL" />
+
+            <Button
+                android:id="@+id/buttonf1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="F1" />
+
+            <Button
+                android:id="@+id/buttonf2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="F2" />
+
+            <Button
+                android:id="@+id/buttonf3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="F3" />
+
+            <Button
+                android:id="@+id/buttonf4"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:text="F4" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.32"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp">
+
+        <TableRow
+            android:id="@+id/tableRowf2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonf5"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="F5" />
+
+            <Button
+                android:id="@+id/buttonf6"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="F6" />
+
+            <Button
+                android:id="@+id/buttonf7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="F7" />
+
+            <Button
+                android:id="@+id/buttonf8"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:text="F8" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkBox_accesorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accesorio :" />
+
+        <TextView
+            android:id="@+id/accesorio"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.02"
+            android:autoText="true"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="right"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/activar_accesorioBt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="ON" />
+
+        <Button
+            android:id="@+id/desactivar_accesorioBt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="OFF" />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D9ECEF"
+            android:gravity="center_horizontal">
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="#D9ECEF">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_grid_list"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:clipChildren="false">
+
+        <ListView
+            android:id="@+id/listview_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d2caca" />
+
+
+        <GridView
+            android:id="@+id/gridview_s88"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:background="#000000"
+            android:columnWidth="40dp"
+            android:horizontalSpacing="1dp"
+            android:numColumns="18"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_weight="0.30"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/status"
+            android:textColor="#da2f2f" />
+
+        <Button
+            android:id="@+id/auxBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="S88"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/connectBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/connect"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
